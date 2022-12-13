@@ -1,9 +1,9 @@
 public class App {
     public static void main(String[] args) {
-        int i = 0;
-        while (i < 5) {
-            System.out.println("i = " + i);
-            i++;
-        }
+        int n = 5;
+        do {
+            System.out.println("n = " + n);
+            n--;
+        } while (n >= 0);
     }
 }
