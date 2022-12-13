@@ -1,5 +1,10 @@
 public class App {
     public static void main(String[] args) {
-        System.out.println("DUT" instanceof Object);
+        int age = 17;
+        if (age >= 18) {
+            System.out.println("You're a Adult");
+        } else {
+            System.out.println("You're a child");
+        }
     }
 }
