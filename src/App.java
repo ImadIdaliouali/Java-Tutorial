@@ -1,10 +1,13 @@
 public class App {
     public static void main(String[] args) {
-        int age = 17;
-        if (age >= 18) {
-            System.out.println("You're a Adult");
+        int a = 5;
+        if (a > 5) {
+            a++;
+        } else if (a > 2) {
+            a--;
         } else {
-            System.out.println("You're a child");
+            a *= 2;
         }
+        System.out.println("a = " + a);
     }
 }
