@@ -1,13 +1,11 @@
 public class App {
     public static void main(String[] args) {
-        char[] c1 = { 'i', 'm', 'a', 'd' };
-        char[] c2 = { 'i', 'm', 'a', 'd' };
-        char[] c3 = c1;
-        if (c1 == c2)
-            System.out.println("c1 == c2");
-        if (c1 == c3)
-            System.out.println("c1 == c3");
-        if (c2 == c3)
-            System.out.println("c2 == c3");
+        String name = "imad";
+        String nom = "imad";
+        System.out.println(name.equals(nom) ? "ok" : "not ok");
+        for (int i = 0; i < name.length(); i++) {
+            System.out.println(name.charAt(i));
+            System.out.println(name.indexOf(name.charAt(i)));
+        }
     }
 }
