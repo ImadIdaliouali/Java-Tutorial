@@ -1,14 +1,16 @@
-import Car.*;
+import Animal.*;
+import Dog.*;
+import Fish.*;
 
 public class App {
     public static void main(String[] args) {
-        Car myCar = new Car();
-        Car otherCar = new Car();
-        myCar.year = 2022;
-        otherCar = myCar;
-        otherCar.year = 2010;
-        myCar.test(otherCar);
-        System.out.println(myCar.year);
-        System.out.println(otherCar.year);
+        Animal[] a = new Animal[2];
+        Dog c = new Dog();
+        Fish p = new Fish();
+        a[0] = c;
+        a[1] = p;
+        for (Animal o : a) {
+            o.eat();
+        }
     }
 }
