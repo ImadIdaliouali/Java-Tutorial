@@ -2,9 +2,7 @@ package Dog;
 
 import Animal.*;
 
-public class Dog extends Animal {
-    private String name;
-
+public class Dog implements Animal {
     @Override
     public void eat() {
         System.out.println("dog eat");

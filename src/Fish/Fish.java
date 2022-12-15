@@ -2,7 +2,7 @@ package Fish;
 
 import Animal.*;
 
-public class Fish extends Animal {
+public class Fish implements Animal {
     @Override
     public void eat() {
         System.out.println("fish eat");
